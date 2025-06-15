@@ -1,0 +1,50 @@
+:root {
+  --dark-theme-bg: rgb(24, 24, 24);
+  --dark-theme-text: rgb(240, 240, 240);
+
+  --light-theme-bg: white;
+  --light-theme-text: rgb(19, 19, 19);
+  --light-theme-link: #ee503f;
+  --light-theme-link-hover: #ee503f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: var(--light-theme-bg);
+  color: var(--light-theme-text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-theme-link);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--light-theme-link-hover);
+}
+
+.main-container {
+  max-width: 800px;
+  margin: 0 auto 0 auto;
+}
+
+.header__title {
+  font-size: 40px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+  
+.header__link-container {
+  width: min-content;
+}
