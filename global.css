@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap');
+
 :root {
   --dark-theme-bg: rgb(24, 24, 24);
   --dark-theme-text: rgb(240, 240, 240);
@@ -14,16 +17,73 @@
   padding: 0px;
 }
 
+.mohave-font {
+  font-family: "Mohave", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mohave-font-bold {
+  font-family: "Mohave", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.comic-neue-light {
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.comic-neue-regular {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comic-neue-bold {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.comic-neue-light-italic {
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.comic-neue-regular-italic {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.comic-neue-bold-italic {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: italic;
+}
+
 body {
   background-color: var(--light-theme-bg);
   color: var(--light-theme-text);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Comic Neue", cursive;
   font-size: 14px;
+}
+
+p::selection,
+a::selection {
+  color: var(--dark-theme-text);
+  background-color: var(--light-theme-link);
 }
 
 a {
   text-decoration: none;
   color: var(--light-theme-link);
+  transition-duration: 0.2s;
 }
 
 a:hover {
@@ -36,15 +96,60 @@ a:hover {
   margin: 0 auto 0 auto;
 }
 
+.header__title-container {
+  display: flex;
+  padding: 60px 0 40px 0;
+  gap: 20px;
+  align-items: center;
+}
+
+.header__status {
+  margin-left: auto;
+  border-right: 1px var(--light-theme-text) solid;
+  padding: 0px 10px;
+  height: 100%;
+  text-align: end;
+  font-size: 12px;
+}
+
+.header__avatar-container {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.header__avatar {
+  height: 100%;
+}
+
 .header__title {
-  font-size: 40px;
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--light-theme-text);
+}
+
+.header__title:hover {
+  text-decoration: none;
 }
 
 .header__nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 40px;
 }
   
 .header__link-container {
   width: min-content;
+  padding: 0px 0px 5px 0px;
+  border-bottom: 2px var(--light-theme-bg) solid ;
+  transition-duration: 0.3s;
+}
+
+.header__link-container:hover {
+  border-bottom: 2px var(--light-theme-link) solid ;
+}
+
+.header__link:hover {
+  text-decoration: none;
 }
