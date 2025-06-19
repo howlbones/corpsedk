@@ -9,6 +9,7 @@
   --light-theme-text: rgb(19, 19, 19);
   --light-theme-link: #ee503f;
   --light-theme-link-hover: #ee503f;
+  --light-theme-date: rgb(143, 143, 143);
 }
 
 * {
@@ -71,13 +72,39 @@ body {
   background-color: var(--light-theme-bg);
   color: var(--light-theme-text);
   font-family: "Comic Neue", cursive;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+li {
+  margin-bottom: 5px;
 }
 
 p::selection,
-a::selection {
+a::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+em::selection,
+br::selection {
   color: var(--dark-theme-text);
   background-color: var(--light-theme-link);
+}
+
+.page-content h1 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.page-content p,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5 {
+  margin-bottom: 20px;
+  line-height: 20px;
 }
 
 a {
@@ -94,6 +121,10 @@ a:hover {
 .main-container {
   max-width: 800px;
   margin: 0 auto 0 auto;
+}
+
+.header {
+  padding-bottom: 40px;
 }
 
 .header__title-container {
@@ -137,6 +168,7 @@ a:hover {
   display: flex;
   justify-content: start;
   gap: 40px;
+  font-size: 14px;
 }
   
 .header__link-container {
@@ -152,4 +184,14 @@ a:hover {
 
 .header__link:hover {
   text-decoration: none;
+}
+
+.split-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.date {
+  font-size: 12px;
+  color: var(--light-theme-date);
 }

@@ -1,0 +1,35 @@
+.news ul {
+  list-style: none;
+}
+
+.split-section {
+  margin-bottom: 20px;
+}
+
+.split-section__left,
+.split-section__right {
+  padding-right: 10px;
+}
+
+p.news__date {
+  margin: 0;
+}
+
+p.news__text {
+  margin: 0;
+}
+
+.bookmarks ul {
+  list-style: none;
+}
+
+.bookmarks ul li::before {
+  content: ">";
+  position: relative;
+  bottom: 1px;
+  margin-right: 5px;
+}
+
+.bookmarks li {
+  margin-bottom: 5px;
+}
